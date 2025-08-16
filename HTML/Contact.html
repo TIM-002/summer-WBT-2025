@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+    <a href="../index.html" class = "logo"> TIM</a> </a><br>
+ 
+        <a href="../index.html">Home</a> |
+        <a href="Education.html">Education</a> |
+        <a href="Experience.html">Experience</a> |
+        <a href="Projects.html">Projects</a> |
+        <a href="Contact.html">Contact Me</a>
+    </nav>
+
+  </header>
+
+  <h2>Contact Me</h2>
+  <main>
+    <form onsubmit="saveData(event)">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="fullname" style="width: 400px;" required >
+      <br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" style="width: 400px;"required><br><br>
+
+      Gender:
+      <input type="radio" name="Gender">Male
+      <input type="radio" name="Gender">Female<br><br>
+
+      Reason:
+      <input type="checkbox" name="Reason">Hiring for a job
+      <input type="checkbox" name="Reason">App Development
+      <input type="checkbox" name="Reason">Freelancing
+      <input type="checkbox" name="Reason">Other<br><br>
+
+      <!--Updated Phone Number input -->
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="phone" oninput="limitPhoneNumber(this)" style="width: 250px; height: 30px;" required><br><br>
+    
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" style="width: 600px;" ></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+
+<br>
+  <footer>
+    <p>Follow me:
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://www.linkedin.com/login" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/TIM-002" target="_blank">GitHub</a>
+    </p>
+    <p>&copy; <span id="2025"></span> WBT</p>
+  </footer>
+
+<script src="../Data/contact.js"></script>
+</body>
+</html>
