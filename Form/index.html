@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Form</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+     <header>
+    <nav>
+        <a href="index.html">Donation</a> 
+        <a href="HTML/Confirmation.html">Confirmation</a> 
+        <a href="HTML/Thank You!.html">Thank You!</a>
+
+      </nav>
+  </header>
+  <form>
+  <div class="container">
+    <h2>Donor Information</h2> <!-- -->
+      <label>First Name<label class="star">*</label><b>: </b><input type="text" required></label><br>
+      <label>Last Name<label class="star">*</label><b>: </b><input type="text" required></label><br>
+      <label>Company<label class="star">*</label><b>: </b><input type="text"></label><br>
+      <label>Address 1<label class="star">*</label><b>: </b><input type="text" required></label><br>
+      <label>Address 2<label class="star">*</label><b>: </b><input type="text"></label><br>
+      <label>City<label class="star">*</label><b>: </b><input type="text" required></label><br>
+      <label>State<label class="star">*</label><b>: </b></label>
+    <select id="stateSelect" name="state">
+  <option value="">Select State</option>
+  <option value="CA-US">California</option>
+  <option value="TX-US">Texas</option>
+  <option value="FL-US">Florida</option>
+  <option value="NY-US">New York</option>
+  
+  <option value="ON-CA">Ontario</option>
+  <option value="QC-CA">Quebec</option>
+  <option value="BC-CA">British Columbia</option>
+  <option value="AB-CA">Alberta</option>
+
+  <option value="ENG-GB">England</option>
+  <option value="SCT-GB">Scotland</option>
+  <option value="WLS-GB">Wales</option>
+  <option value="NI-GB">Northern Ireland</option>
+
+  <option value="NSW-AU">New South Wales</option>
+  <option value="VIC-AU">Victoria</option>
+  <option value="QLD-AU">Queensland</option>
+  <option value="WA-AU">Western Australia</option>
+</select>
+      <br>
+      <label>Zip Code<b>: </b><label class="star">*</label><input type="text" required></label><br>
+      <label>Country<b>: </b><label class="star">*</label></label>
+      <select id="countrySelect" name="country">
+  <option value="">Select Country</option>
+  <option value="US">United States</option>
+  <option value="CA">Canada</option>
+  <option value="GB">United Kingdom</option>
+  <option value="BD">Australia</option>
+  <option value="GER">Australia</option>
+  <option value="AU">Australia</option>
+  <option value="AUS">Australia</option>
+  <option value="ESP">Australia</option>
+
+</select>
+      <br>
+    
+      </label>
+      <label>Phone<b>: </b><label class="star">*</label><input type="text"></label><br>
+      <label>Fax<b>: </b><label class="star">*</label><input type="text"></label><br>
+      <label>Email<b>: </b><label class="star">*</label><input type="email" required></label><br>
+
+        <legend>Donation Amount</legend>
+        <label><input type="radio" name="amount" checked> None</label>
+        <label><input type="radio" name="amount"> $50</label>
+        <label><input type="radio" name="amount"> $75</label>
+        <label><input type="radio" name="amount"> $100</label>
+        <label><input type="radio" name="amount"> $250</label>
+<br>
+      <label><input type="checkbox"> I am interested in giving on a regular basis.</label><br>
+      <label>Monthly Credit Card $ <input type="text" style="width:50px;"> For <input type="text" style="width:50px;"> Months</label>
+<br>
+      <h3>Honorarium and Memorial Donation Information</h3>
+      <label><input type="radio" name="honor"> To Honor</label>
+      <label><input type="radio" name="honor"> In Memory of</label><br>
+      <label>Name<b>: </b> <input type="text"></label><br>
+      <label>Acknowledge Donation to<b>: </b> <input type="text"></label><br>
+      <label>Address<b>: </b> <input type="text"></label><br>
+      <label><p>   </p>City<b>: </b> <input type="text"></label><br>
+      <label>State<b>: </b></label>
+      <select id="stateSelect" name="state">
+  <option value="">Select State</option>
+  <option value="CA-US">California</option>
+  <option value="TX-US">Texas</option>
+  <option value="FL-US">Florida</option>
+  <option value="NY-US">New York</option>
+  
+  <option value="ON-CA">Ontario</option>
+  <option value="QC-CA">Quebec</option>
+  <option value="BC-CA">British Columbia</option>
+  <option value="AB-CA">Alberta</option>
+
+  <option value="ENG-GB">England</option>
+  <option value="SCT-GB">Scotland</option>
+  <option value="WLS-GB">Wales</option>
+  <option value="NI-GB">Northern Ireland</option>
+
+  <option value="NSW-AU">New South Wales</option>
+  <option value="VIC-AU">Victoria</option>
+  <option value="QLD-AU">Queensland</option>
+  <option value="WA-AU">Western Australia</option>
+</select>
+      <br>
+      </label>
+      <label>Zip<b>: </b> <input type="text"></label>
+
+      <h3>Additional Information</h3>
+      <p>Please enter your name,company or the organization as you would like it to appear in our publications:</p>
+      <label>Name <b>: </b><input type="text"></label><br>
+      <label><input type="checkbox"> I would like my gift to remain anonymous.</label><br>
+      <label><input type="checkbox"> My employer offers a matching gift program.</label><br>
+      <label><input type="checkbox"> Do not mail a thank-you letter.</label><br>
+      <label>Comment<b>: </b>(Please type any questions or feedback here) <input id="message" name="message" style="height: 100px;width: 500px;" ></textarea>
+      <p>How may we contact you?</p>
+      <label><input type="checkbox"> E-mail</label>
+      <label><input type="checkbox"> Postal Mail</label>
+      <label><input type="checkbox"> Telephone</label>
+      <label><input type="checkbox"> Fax</label>
+
+      <p>Receive newsletters and event info by:</p>
+      <label><input type="checkbox"> E-mail</label><br>
+      <label><input type="checkbox"> Postal Mail</label>
+<br>
+      <label><input type="checkbox"> I would like information about volunteering</label>
+
+      <div class="buttons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Continue">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
