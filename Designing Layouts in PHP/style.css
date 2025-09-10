@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+ 
+.container {
+    width: 70%;
+    margin: 30px auto;
+    border: 1px solid #000;
+}
+ 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+ 
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+.logo .x {
+    color: green;
+    font-size: 28px;
+}
+ 
+/* Navigation */
+nav a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #0000aa;
+    font-size: 15px;
+}
+ 
+nav a:hover {
+    text-decoration: underline;
+}
+ 
+/* Main */
+main {
+    text-align: left;
+    padding: 50px 0;
+    border-bottom: 1px solid #000;
+}
+ 
+main h3 {
+    font-weight:bold;
+}
+ 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+ 
